@@ -1,0 +1,16 @@
+android create project --target "Google Inc.:Google APIs:7" --path Skeleton/Now --activity Now --package com.commonsware.android.skeleton
+android create project --target "Google Inc.:Google APIs:9" --activity ManageStations --package me.ianibbo
+
+
+Command used to create
+android create project --target "android-11" --activity ManageStations --package me.ianibbo --path .
+
+
+
+
+Here is an example of how to create a simple intent with a predefined action
+(ACTION_VIEW) to launch the web browser with a specific URL:
+Uri address = Uri.parse(“http://www.perlgurl.org”);
+Intent surf = new Intent(Intent.ACTION_VIEW, address);
+startActivity(surf);
+
