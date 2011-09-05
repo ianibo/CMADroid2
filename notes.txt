@@ -6,6 +6,10 @@ Command used to create
 android create project --target "android-11" --activity ManageStations --package me.ianibbo --path .
 
 
+To run
+
+ant clean install
+
 
 
 Here is an example of how to create a simple intent with a predefined action
@@ -13,4 +17,6 @@ Here is an example of how to create a simple intent with a predefined action
 Uri address = Uri.parse(“http://www.perlgurl.org”);
 Intent surf = new Intent(Intent.ACTION_VIEW, address);
 startActivity(surf);
+
+
 
