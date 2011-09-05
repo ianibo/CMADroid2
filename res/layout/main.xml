@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@android:id/tabhost"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <TabWidget android:id="@android:id/tabs"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"/>
+
+      <FrameLayout android:id="@android:id/tabcontent"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent">
+        <TextView android:id="@+id/about"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="About Canstreamer v2" />
+        <TextView android:id="@+id/stations"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Stations List" />
+        <TextView android:id="@+id/news"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="News" />
+      </FrameLayout>
+  </LinearLayout>
+</TabHost>
+
+<!--
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -10,4 +41,4 @@
     android:text="Hello World, ManageStations"
     />
 </LinearLayout>
-
+-->
