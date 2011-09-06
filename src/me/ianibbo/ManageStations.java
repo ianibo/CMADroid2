@@ -16,8 +16,8 @@ public class ManageStations extends TabActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Button save=(Button)findViewById(R.id.play);
-        // save.setOnClickListener(onSave);
+        Button play=(Button)findViewById(R.id.play);
+        save.setOnClickListener(play_listener);
 
 
         TabHost.TabSpec spec=getTabHost().newTabSpec("about");
@@ -43,4 +43,14 @@ public class ManageStations extends TabActivity
         getTabHost().setCurrentTab(0);
 
     }
+
+    private View.OnClickListener play_listener=new View.OnClickListener() {
+      public void onClick(View v) {
+        // EditText name=(EditText)findViewById(R.id.name);
+        // EditText address=(EditText)findViewById(R.id.addr);
+        // r.setName(name.getText().toString());
+        // r.setAddress(address.getText().toString());
+      }
+    };
+
 }
