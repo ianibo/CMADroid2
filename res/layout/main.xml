@@ -25,6 +25,20 @@
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
                   android:text="News" />
+        <TableLayout android:id="@+id/player"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:stretchColumns="1"
+                     android:paddingTop="4dip">
+          <TableRow>
+            <TextView android:text="Player" />
+            <Button android:id="@+id/play"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="play"/>
+
+          </TableRow>
+        </TableLayout>
       </FrameLayout>
   </LinearLayout>
 </TabHost>

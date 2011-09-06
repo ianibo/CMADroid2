@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.app.TabActivity;
 import android.widget.TabHost;
+import android.widget.Button;
 
 public class ManageStations extends TabActivity
 {
@@ -14,6 +15,10 @@ public class ManageStations extends TabActivity
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        Button save=(Button)findViewById(R.id.play);
+        // save.setOnClickListener(onSave);
+
 
         TabHost.TabSpec spec=getTabHost().newTabSpec("about");
         spec.setContent(R.id.about);
@@ -28,6 +33,11 @@ public class ManageStations extends TabActivity
         spec=getTabHost().newTabSpec("news");
         spec.setContent(R.id.news);
         spec.setIndicator("News");
+        getTabHost().addTab(spec);
+
+        spec=getTabHost().newTabSpec("player");
+        spec.setContent(R.id.player);
+        spec.setIndicator("Player");
         getTabHost().addTab(spec);
 
         getTabHost().setCurrentTab(0);
