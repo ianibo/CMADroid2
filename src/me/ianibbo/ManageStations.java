@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.TabActivity;
 import android.widget.TabHost;
 import android.widget.Button;
+import android.view.View;
 
 public class ManageStations extends TabActivity
 {
@@ -17,7 +18,7 @@ public class ManageStations extends TabActivity
         setContentView(R.layout.main);
 
         Button play=(Button)findViewById(R.id.play);
-        save.setOnClickListener(play_listener);
+        play.setOnClickListener(play_listener);
 
 
         TabHost.TabSpec spec=getTabHost().newTabSpec("about");
